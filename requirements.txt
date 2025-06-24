@@ -1,0 +1,38 @@
+# Supabase client
+supabase==2.9.1
+
+# Environment variables
+python-dotenv==1.0.0
+
+# Web scraping and automation
+selenium==4.16.0
+beautifulsoup4==4.12.2
+requests==2.31.0
+
+# Data processing
+pandas==2.1.4
+
+# Async support (optional)
+asyncio==3.4.3
+aiohttp==3.9.1
+
+# Logging and monitoring
+loguru==0.7.2
+
+# WebDriver management
+webdriver-manager==4.0.1
+
+# Proxy validation
+pycurl==7.45.2
+
+# Time and scheduling
+schedule==1.2.0
+
+# AI/ML for configuration generation
+google-generativeai==0.8.3 
+
+# API Server
+flask==3.0.0
+flask-cors==4.0.0
+
+# Network distributed validation 
