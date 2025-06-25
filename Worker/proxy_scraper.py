@@ -658,8 +658,12 @@ class ProxyScraper:
                                 if len(cells) <= max(ip_col, port_col):
                                     continue  # Skip if not enough columns
                                 
-                                ip = cells[ip_col].get_text(strip=True)
-                                port_text = cells[port_col].get_text(strip=True)
+                                # check if the first cell contains ip:port format
+                                if ':' in cells[ip_col].get_text(strip=True):
+                                    ip, port_text = cells[ip_col].get_text(strip=True).split(':')
+                                else:
+                                    ip = cells[ip_col].get_text(strip=True)
+                                    port_text = cells[port_col].get_text(strip=True)
                                 
                                 # Clean port text (remove any non-numeric characters except for ranges)
                                 import re
